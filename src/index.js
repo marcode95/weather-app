@@ -1,13 +1,15 @@
 import _ from 'lodash';
 import './style.css'
 
-function component() {
-  const element = document.createElement('div');
-
-  // Lodash, currently included via a script, is required for this line to work
-  element.innerHTML = _.join(['Hello', 'webpack'], ' ');
-  element.classList.add('hello');
-  return element;
+async function showAvatar() {
+  try {
+    let response = await fetch('https://api.openweathermap.org/data/2.5/weather?q=London&appid=3d01fe516dd3a560412d2f557ad5d8f5', {mode: 'cors'});
+    const responseData = await response.json();
+    console.log(responseData);
+  } 
+  catch (error) {
+    console.log('scheiße')
+  }
 }
 
-document.body.appendChild(component());
+showAvatar();
