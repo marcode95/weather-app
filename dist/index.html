@@ -3,8 +3,21 @@
   <head>
     <meta charset="utf-8" />
     <title>Getting Started</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/9a2f12287f.js" crossorigin="anonymous"></script>
   </head>
   <body>
+    <div id="background" class="w-100 h-100">
+        <div id="form" class="border">
+          <form action="">
+            <input type="text" id="city-input" placeholder="City" class="form-input"/> 
+            <input type="button" id="submit-input" value="Submit" class="form-input"/>
+          </form>
+          <p id="city-name"></p>
+          <p id="city-temp"></p>
+          <button id="toggle">Toggle</button>
+        </div>
+    </div>
     <script src="bundle.js"></script>
   </body>
 </html>
