@@ -8,7 +8,7 @@ A simple desktop&tablet-app for checking the weather implemented through HTML5, 
 ![screenshot of main page](./src/images/mockup.png)
 
 ## Live Version
-https://cocky-ardinghelli-805b0e.netlify.app/
+https://elastic-bhabha-68ab06.netlify.app/
 </div>
 <br>  
 
@@ -24,7 +24,7 @@ https://cocky-ardinghelli-805b0e.netlify.app/
 
 
 ## About <a name = "about"></a>
-This project was a task by Microverse Inc. to build a to-do-list inluding a simple form for adding to-do's and projects, categorizing them and editing descriptions. 
+This project was a task by Microverse Inc. to build a weather app inluding the usage of an api.
 
 
 ## 🔧 Built with<a name = "with"></a>
@@ -57,7 +57,7 @@ If you don't meet the above prerequisites, then:
 ###  App <a name = "app"></a>
 With the installations above complete, you are set to use the code and view the application built in this repository. Follow these simple steps:
 
-- Change directory into the directory where you cloned the repository. Forexample ``vanheaven@vanheaven-VirtualBox:~/Microverse-projects$ cd to-do-list.``
+- Change directory into the directory where you cloned the repository. Forexample ``vanheaven@vanheaven-VirtualBox:~/Microverse-projects$ cd weather-app.``
 - Open the index.html file using your browser
 
 ## ✒️  Authors <a name = "author"></a>
@@ -87,4 +87,4 @@ And your reward awaits in heaven.
 Give a ⭐️ if you like this project!
 
 ## :clap: Acknowledgements
-- [Design](https://www.behance.net/parth99) <br />
+- [API](https://openweathermap.org/) <br />
