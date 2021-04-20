@@ -8,7 +8,7 @@ const weatherData = (name, temp, weather) => ({
   name, temp, weather,
 });
 
-async function getData(city) {
+const getData = async (city) => {
   try {
     const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=3d01fe516dd3a560412d2f557ad5d8f5`, { mode: 'cors' });
     const responseData = await response.json();
