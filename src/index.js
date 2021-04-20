@@ -3,6 +3,9 @@ import { append, swichUnit } from './components/dom';
 
 const submit = document.getElementById('submit-input');
 const errorWindow = document.getElementById('error');
+const loader = document.getElementById('loader');
+const form = document.getElementById('form');
+
 
 const weatherData = (name, temp, weather) => ({
   name, temp, weather,
@@ -12,6 +15,10 @@ const getData = async (city) => {
   try {
     const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=3d01fe516dd3a560412d2f557ad5d8f5`, { mode: 'cors' });
     const responseData = await response.json();
+    loader.classList.remove('display-block');
+    loader.classList.add('display-none');
+    form.classList.remove('display-block');
+    form.classList.add('display-none');
     // eslint-disable-next-line max-len
     const newItem = weatherData(responseData.name, responseData.main.temp, responseData.weather[0].main);
     append(newItem);
@@ -29,6 +36,10 @@ getData('Berlin');
 
 submit.addEventListener('click', () => {
   const city = document.getElementById('city-input').value;
+  loader.classList.remove('display-none');
+  loader.classList.add('display-block');
+  form.classList.remove('display-block');
+  form.classList.add('display-none');
   getData(city);
 });
 

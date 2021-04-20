@@ -8,21 +8,22 @@
   </head>
   <body>
     <div id="background-container" class="w-100 h-100"></div>
-        <div id="form" class= "d-flex flex-column align-items-center justify-content-start">
-          <div id="logo-container"></div>
-          <p id="city-name"></p>
-          <p class="m-0"><span id="city-temp"></span><span id="temp-unit">°C</span></p>
-          <button id="toggle"><i class="fas fa-toggle-off"></i></button>
-          <form action="">
-            <div class="d-flex flex-column">
-              <input type="text" id="city-input" placeholder="City" class="form-input w-100"/> 
-              <input type="button" id="submit-input" value="Search" class="form-input mx-auto"/>
-            </div>
-          </form>
+    <div id="form" class= "d-flex flex-column align-items-center justify-content-start">
+      <div id="logo-container"></div>
+      <p id="city-name"></p>
+      <p class="m-0"><span id="city-temp"></span><span id="temp-unit">°C</span></p>
+      <button id="toggle"><i class="fas fa-toggle-off"></i></button>
+      <form action="">
+        <div class="d-flex flex-column">
+          <input type="text" id="city-input" placeholder="City" class="form-input w-100"/> 
+          <input type="button" id="submit-input" value="Search" class="form-input mx-auto"/>
         </div>
-        <div id="error" class="display-none">
-          <p class="error-message">City not found!</p>
-        </div>
+      </form>
+    </div>
+    <div id="error" class="display-none">
+      <p class="error-message">City not found!</p>
+    </div>
+    <div id="loader" class="display-none"></div>
     <script src="bundle.js"></script>
   </body>
 </html>
