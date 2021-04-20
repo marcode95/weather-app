@@ -1,5 +1,5 @@
 <div align="center">
-  <h1><b>to-do's</b></h1>
+  <h1><b>Weather App</b></h1>
 
 
 A simple desktop&tablet-app for checking the weather implemented through HTML5, CSS3, Javascript and the usage of the openweather-api. Users can look up the current temperature in their city of choice and switch between Celsius and Fahrenheit. An error message will pop up if the city is not found. The background and weather logo will change depending on the predominant weather.
