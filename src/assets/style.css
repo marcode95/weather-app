@@ -1,0 +1,83 @@
+body {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  font-family: sans-serif;
+}
+
+.background-picture {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 15px;
+  box-shadow: inset -5px 0 10px rgba(255, 255, 255, 0.2);
+  padding: 20px;
+}
+
+.logo-picture {
+  width: 150px;
+}
+
+#city-name {
+  font-size: 30px;
+  margin-bottom: 0;
+}
+
+#city-temp,
+#temp-unit {
+  font-size: 60px;
+}
+
+#toggle {
+  color: black;
+  background-color: transparent;
+  font-size: 40px;
+  border: none;
+}
+
+#toggle:hover,
+#toggle:focus {
+  outline: none;
+}
+
+#city-input {
+  background-color: transparent;
+  text-align: center;
+  border: none;
+  border-bottom: 1px solid black;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+#city-input:hover,
+#city-input:focus {
+  outline: none;
+}
+
+#city-input::placeholder {
+  color: black;
+}
+
+#submit-input {
+  background-color: transparent;
+  border: 1px solid black;
+  border-radius: 8px;
+}
+
+#submit-input:hover {
+  background-color: white;
+  color: black;
+  transition: 0.35s;
+}
+
+#submit-input:focus {
+  outline: none;
+}
